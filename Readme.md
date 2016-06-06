@@ -59,15 +59,8 @@ function readFileAsync(...) {
     })
 }
 
-async function readdirAsync(...) {
-    return new Promise((resolve, reject) => {
-        fs.readdir(..., (err, data) => {
-            if (err) {
-                return reject(err)
-            }
-            resolve(data)
-        })
-    })
+async function anotherReadFileAsync(...) {
+    await readFileAsync(...)
 }
 ```
 

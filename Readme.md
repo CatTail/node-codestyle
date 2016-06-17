@@ -32,6 +32,20 @@ var mongoose = require('mongoose')
 var Car = require('./models/Car')
 ```
 
+## Exports
+
+Put module exports right after requires,
+
+```
+var http = require('http')
+
+module.exports = SampleHTTPServer
+
+function SampleHTTPServer() {
+
+}
+```
+
 ## Naming Conventions
 
 Use a leading underscore `_` when naming private properties.
